@@ -1,10 +1,15 @@
 pipeline {
     agent any
     environment {
-        SERVICE = 'gateway-service'
+        SERVICE = 'product-service'
         NAME = "guizin-15/${env.SERVICE}"
     }
     stages {
+        stage('Dependencies') {
+            steps {
+                echo 'Installing dependencies...'
+            }
+        }
         stage('Build') { 
             steps {
                 sh 'mvn -B -DskipTests clean package'
