@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: account
-          image: loquinze/account:latest
+          image: leosfreitas/account:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
