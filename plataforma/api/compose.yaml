@@ -11,8 +11,6 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-store}
     volumes:
       - $VOLUME/postgres/store:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
 
   account:
     hostname: account
@@ -50,7 +48,7 @@ services:
       context: ./auth-service
       dockerfile: Dockerfile
     environment:
-      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-yrBBgYlvJQeslzFlgX9MFZccToI2fjRFqualquercoisa}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-9DazPh4l5jDkq0luZzHeKEQB0CxP7hbVA1EAXHS8dh4=}
 
   gateway:
     hostname: gateway
@@ -62,7 +60,18 @@ services:
     ports:
       - 8080:8080
 
-  # exchange:
-  #   build:
-  #     context: ./exchange-service
-  #     dockerfile: Dockerfile
+  exchange:
+    hostname: exchange
+    build:
+      context: ./exchange-service
+      dockerfile: Dockerfile
+    env_file:
+      - ./exchange-service/.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      auth:
+        condition: service_started
+    restart: on-failure
+
+ 
