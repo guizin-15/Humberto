@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../minikubes/">
+        <link rel="prev" href="../jenkins/">
       
       
-        <link rel="next" href="../configEKS/">
+        <link rel="next" href="../configAWS/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Configuração do AWS - Plataforma – APIs</title>
+        <title>Minikubes - Plataforma – APIs</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuracao-da-aws-cli" class="md-skip">
+        <a href="#minikube" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuração do AWS
+              Minikubes
             
           </span>
         </div>
@@ -217,18 +217,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -244,7 +246,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Individual
@@ -370,76 +372,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../minikubes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Minikubes
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Projetos
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Projetos
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
     
   
   
@@ -457,7 +389,7 @@
   
   
   <span class="md-ellipsis">
-    Configuração do AWS
+    Minikubes
     
   </span>
   
@@ -470,7 +402,7 @@
   
   
   <span class="md-ellipsis">
-    Configuração do AWS
+    Minikubes
     
   </span>
   
@@ -493,36 +425,120 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-criacao-do-usuario-iam" class="md-nav__link">
+  <a href="#objetivo" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Criação do Usuário IAM
+      Objetivo
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-geracao-da-chave-de-acesso" class="md-nav__link">
+  <a href="#pre-requisitos" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Geração da Chave de Acesso
+      Pré-Requisitos
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-configuracao-da-aws-cli" class="md-nav__link">
+  <a href="#passos-para-iniciar" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Configuração da AWS CLI
+      Passos para iniciar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Passos para iniciar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-iniciar-o-minikube" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Iniciar o Minikube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-clonar-e-navegar-ate-o-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Clonar e navegar até o projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-aplicar-todos-os-arquivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Aplicar todos os arquivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-verificar-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Verificar status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Verificar status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serviços
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retorno-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retorno Esperado:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acessando-a-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acessando a aplicação
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-verificacao-da-configuracao" class="md-nav__link">
+  <a href="#arquitetura-do-k8s" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Verificação da Configuração
+      Arquitetura do ⁠ k8s/ ⁠
     </span>
   </a>
   
@@ -532,6 +548,74 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Projetos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Projetos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configAWS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuração do AWS
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -709,36 +793,120 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-criacao-do-usuario-iam" class="md-nav__link">
+  <a href="#objetivo" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Criação do Usuário IAM
+      Objetivo
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-geracao-da-chave-de-acesso" class="md-nav__link">
+  <a href="#pre-requisitos" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Geração da Chave de Acesso
+      Pré-Requisitos
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-configuracao-da-aws-cli" class="md-nav__link">
+  <a href="#passos-para-iniciar" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Configuração da AWS CLI
+      Passos para iniciar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Passos para iniciar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-iniciar-o-minikube" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Iniciar o Minikube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-clonar-e-navegar-ate-o-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Clonar e navegar até o projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-aplicar-todos-os-arquivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Aplicar todos os arquivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-verificar-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Verificar status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Verificar status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serviços
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retorno-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retorno Esperado:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acessando-a-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acessando a aplicação
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-verificacao-da-configuracao" class="md-nav__link">
+  <a href="#arquitetura-do-k8s" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Verificação da Configuração
+      Arquitetura do ⁠ k8s/ ⁠
     </span>
   </a>
   
@@ -760,58 +928,78 @@
 
 
 
-<h1 id="configuracao-da-aws-cli">Configuração da AWS CLI</h1>
-<blockquote>
-<p>Este guia descreve os passos realizados para configurar o acesso à AWS a partir da máquina local, utilizando a <strong>AWS CLI</strong> e uma <strong>chave de acesso IAM</strong>.</p>
-</blockquote>
+<h1 id="minikube">MiniKube</h1>
+<h2 id="objetivo">Objetivo</h2>
+<p>Executar todos os microserviços em um cluster Kubernetes local usando o Minikube, reproduzindo um ambiente de orquestração completo.</p>
 <hr />
-<h2 id="1-criacao-do-usuario-iam">1. Criação do Usuário IAM</h2>
-<p>No console da AWS:</p>
-<ul>
-<li>Acesse o serviço <code>IAM</code></li>
-<li>Vá até <strong>Usuários</strong> &gt; <strong>Criar usuário</strong></li>
-<li>Dê permissões apropriadas (por exemplo: <code>AdministratorAccess</code>)</li>
-<li>Anote a chave gerada:</li>
-<li><code>Access Key ID</code></li>
-<li><code>Secret Access Key</code></li>
-</ul>
-<p><img alt="print usuário IAM" src="../imgs/AWS.png" /></p>
+<h2 id="pre-requisitos">Pré-Requisitos</h2>
+<p>•⁠  ⁠Docker instalado e rodando
+•⁠  ⁠Minikube instalado
+•⁠  ⁠kubectl instalado</p>
 <hr />
-<h2 id="2-geracao-da-chave-de-acesso">2. Geração da Chave de Acesso</h2>
-<p>Após criar o usuário, uma <strong>chave de acesso</strong> é fornecida.</p>
-<ul>
-<li>Guarde com segurança!</li>
-<li>Necessária para configurar a AWS CLI.</li>
-</ul>
+<h2 id="passos-para-iniciar">Passos para iniciar</h2>
+<h3 id="1-iniciar-o-minikube">1. Iniciar o Minikube</h3>
+<p>No terminal, rode:</p>
+<p>⁠ bash
+minikube start --driver=docker
+ ⁠</p>
 <hr />
-<h2 id="3-configuracao-da-aws-cli">3. Configuração da AWS CLI</h2>
-<p>No terminal, execute:</p>
-<div class="highlight"><pre><span></span><code>aws<span class="w"> </span>configure
-</code></pre></div>
-<p>Insira as informações solicitadas:</p>
-<div class="highlight"><pre><span></span><code>AWS Access Key ID:     &lt;copiado da AWS&gt;
-AWS Secret Access Key: &lt;copiado da AWS&gt;
-Default region name:   us-east-1
-Default output format: json
-</code></pre></div>
-<p>📸 <em>Print da configuração no terminal</em><br />
-<img alt="print aws configure" src="./imgs/aws_configure_cli.png" /></p>
+<h3 id="2-clonar-e-navegar-ate-o-projeto">2. Clonar e navegar até o projeto</h3>
+<p>⁠ bash
+cd platforma/api/k8s
+ ⁠</p>
+<p>Esse diretório contém os arquivos YAML de ⁠ deployment ⁠ e ⁠ service ⁠ para:</p>
+<p>•⁠  ⁠⁠ account-service ⁠
+•⁠  ⁠⁠ auth-service ⁠
+•⁠  ⁠⁠ exchange-service ⁠
+•⁠  ⁠⁠ gateway-service ⁠
+•⁠  ⁠⁠ order-service ⁠
+•⁠  ⁠⁠ product-service ⁠
+•⁠  ⁠⁠ postgres-service ⁠</p>
 <hr />
-<h2 id="4-verificacao-da-configuracao">4. Verificação da Configuração</h2>
-<p>Comando para testar:</p>
-<div class="highlight"><pre><span></span><code>aws<span class="w"> </span>sts<span class="w"> </span>get-caller-identity
-</code></pre></div>
-<p>Retorno esperado:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;UserId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AKIA....&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;Account&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123456789012&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;Arn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:aws:iam::123456789012:user/platform-eks&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
+<h3 id="3-aplicar-todos-os-arquivos">3. Aplicar todos os arquivos</h3>
+<p>⁠ bash
+kubectl apply -f .
+ ⁠</p>
+<pre><code>⁠Esse comando lê todos os arquivos ⁠ .yml ⁠ do diretório atual e sobe os pods e serviços no cluster.
+</code></pre>
 <hr />
-<blockquote>
-<p><em>Última configuração realizada em 2025-06-03 com sucesso!</em></p>
-</blockquote>
+<h3 id="4-verificar-status">4. Verificar status</h3>
+<h4 id="pods">Pods</h4>
+<p>⁠ bash
+kubectl get pods
+ ⁠</p>
+<h4 id="servicos">Serviços</h4>
+<p>⁠ bash
+kubectl get service</p>
+<h4 id="retorno-esperado">Retorno Esperado:</h4>
+<p><img alt="minikube pods" src="../imgs/eks5.png" /></p>
+<hr />
+<h2 id="acessando-a-aplicacao">Acessando a aplicação</h2>
+<p>Se quiser acessar algum serviço (ex: ⁠ gateway-service ⁠) localmente via browser:</p>
+<p>⁠ bash
+minikube service gateway-service
+ ⁠</p>
+<p>Isso abre automaticamente o serviço no navegador com um <em>túnel temporário</em> via Minikube.</p>
+<hr />
+<h2 id="arquitetura-do-k8s">Arquitetura do ⁠ k8s/ ⁠</h2>
+<p>k8s/
+├─ account-service/
+   ├─ k8s.yaml 
+├─ auth-service/
+   ├─ k8s.yaml 
+├─ gateway-service/
+   ├─ k8s.yaml 
+├─ order-service/
+   ├─ k8s.yaml 
+├─ postgres-service/
+   ├─ configmap.yaml 
+   ├─ deployment.yaml 
+   ├─ secrets.yaml 
+   ├─ service.yaml 
+└─ product-service/
+   ├─ k8s.yaml </p>
+<hr />
 
 
 
