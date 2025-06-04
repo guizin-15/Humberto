@@ -10,3 +10,9 @@ mkdocs-git-committers-plugin-2
 mkdocs-git-revision-date-localized-plugin
 mkdocs-render-swagger-plugin
 termynal
+mkdocs
+mkdocs-material
+mkdocstrings[python]
+mkdocs-git-revision-date-plugin
+mkdocs-awesome-pages-plugin
+mkdocs-markdownextradata-plugin
