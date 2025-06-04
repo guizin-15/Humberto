@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../order/">
+        <link rel="prev" href="../configAWS/">
       
       
-        <link rel="next" href="../jenkins/">
+        <link rel="next" href="../testedecarga/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Bottleneck - Plataforma – APIs</title>
+        <title>Configuração do EKS - Plataforma – APIs</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bottlenecks-observabilidade-e-cache" class="md-skip">
+        <a href="#configuracao-do-eks-amazon-elastic-kubernetes-service" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bottleneck
+              Configuração do EKS
             
           </span>
         </div>
@@ -217,20 +217,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -246,7 +244,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Individual
@@ -326,32 +324,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Bottleneck
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../bottlenecks/" class="md-nav__link">
         
   
   
@@ -362,116 +338,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#grafana" class="md-nav__link">
-    <span class="md-ellipsis">
-      Grafana
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Grafana">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-grafanak8sk8syaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kubernetes: grafana/k8s/k8s.yaml
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prometheus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prometheus
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prometheus">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-prometheusk8sk8syaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kubernetes: prometheus/k8s/k8s.yaml
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#redis-cache-in-memory" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚡ Redis – Cache In-Memory
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚡ Redis – Cache In-Memory">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-redisk8sk8syaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kubernetes: redis/k8s/k8s.yaml
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metricas-observadas" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Métricas observadas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusão
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -534,18 +400,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -561,7 +429,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Projetos
@@ -595,10 +463,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../configEKS/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Configuração do EKS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -609,6 +499,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-criacao-do-papel-iam-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Criação do Papel (IAM Role)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-criacao-da-vpc-com-subnets" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Criação da VPC com Subnets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-criacao-do-cluster-eks" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Criação do Cluster EKS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Final
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -763,90 +709,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#grafana" class="md-nav__link">
+  <a href="#1-criacao-do-papel-iam-role" class="md-nav__link">
     <span class="md-ellipsis">
-      Grafana
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Grafana">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-grafanak8sk8syaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kubernetes: grafana/k8s/k8s.yaml
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prometheus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prometheus
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prometheus">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-prometheusk8sk8syaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kubernetes: prometheus/k8s/k8s.yaml
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#redis-cache-in-memory" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚡ Redis – Cache In-Memory
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚡ Redis – Cache In-Memory">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-redisk8sk8syaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kubernetes: redis/k8s/k8s.yaml
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metricas-observadas" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Métricas observadas
+      1. Criação do Papel (IAM Role)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
+  <a href="#2-criacao-da-vpc-com-subnets" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusão
+      2. Criação da VPC com Subnets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-criacao-do-cluster-eks" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Criação do Cluster EKS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Final
     </span>
   </a>
   
@@ -868,103 +760,124 @@
 
 
 
-<h1 id="bottlenecks-observabilidade-e-cache">Bottlenecks – Observabilidade e Cache</h1>
+<h1 id="configuracao-do-eks-amazon-elastic-kubernetes-service">Configuração do EKS – Amazon Elastic Kubernetes Service</h1>
 <blockquote>
-<p>Este módulo da plataforma trata da <strong>mitigação de gargalos (bottlenecks)</strong> através de soluções de monitoramento e cache:
-- Monitoramento com <strong>Prometheus + Grafana</strong>
--  Cache com <strong>Redis</strong></p>
+<p>Este documento apresenta o processo de configuração de infraestrutura usando o <strong>Amazon EKS</strong>.<br />
+O EKS é o serviço gerenciado da AWS para orquestração de containers com Kubernetes.</p>
 </blockquote>
+<h2 id="1-criacao-do-papel-iam-role">1. Criação do Papel (IAM Role)</h2>
+<p>O primeiro passo é criar uma <strong>IAM Role</strong> com permissões de administração para o cluster EKS. Essa role será associada ao cluster para que possa operar os recursos no ambiente.</p>
+<p><img alt="role IAM" src="../imgs/eks.png" /></p>
 <hr />
-<h2 id="grafana">Grafana</h2>
-<p>Painel de visualização gráfica dos dados coletados pelo Prometheus.</p>
-<h3 id="kubernetes-grafanak8sk8syaml">Kubernetes: <code>grafana/k8s/k8s.yaml</code></h3>
+<h2 id="2-criacao-da-vpc-com-subnets">2. Criação da VPC com Subnets</h2>
+<p>Usamos o assistente da AWS CloudFormation para gerar uma <strong>VPC com subnets públicas e privadas</strong>, conforme template oficial da AWS para clusters EKS.</p>
+<p><img alt="vpc e subnets" src="../imgs/eks2.png" /></p>
+<hr />
+<h2 id="3-criacao-do-cluster-eks">3. Criação do Cluster EKS</h2>
+<p>Com a VPC e a Role configuradas, seguimos com a criação do cluster no painel do <strong>EKS</strong>, atribuindo:</p>
 <ul>
-<li>Cria:</li>
-<li><code>Deployment</code>: com imagem <code>grafana/grafana-enterprise</code></li>
-<li><code>Service</code>: expõe a porta <code>3000</code></li>
-<li>Admin password: <code>admin</code></li>
-<li>Armazena os dashboards em volume <code>emptyDir</code></li>
+<li>Nome: <code>eks-store</code></li>
+<li>Versão do Kubernetes: <code>1.32</code></li>
+<li>Função (IAM Role): a criada anteriormente</li>
+<li>VPC: a provisionada na etapa anterior</li>
 </ul>
-<p><em>Print do dashboard do Grafana aqui</em><br />
-<img alt="grafana-dashboard" src="./imgs/grafana.png" /></p>
+<p><img alt="eks cluster ativo" src="../imgs/eks3.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Acesso ao Cluster</p>
+<p><strong>Passos</strong><br />
+Depois disso, acessamos o cluster por meio do aws cli com o seguinte comando:</p>
+<div class="highlight"><pre><span></span><code>aws eks update-kubeconfig --region us-east-2 --name eks-store, conectando-nos ao cluster
+</code></pre></div>
+</div>
 <hr />
-<h2 id="prometheus">Prometheus</h2>
-<p>Responsável por coletar métricas dos microsserviços (via <code>/actuator/prometheus</code>).</p>
-<h3 id="kubernetes-prometheusk8sk8syaml">Kubernetes: <code>prometheus/k8s/k8s.yaml</code></h3>
-<ul>
-<li>Cria:</li>
-<li><code>ConfigMap</code> com <code>prometheus.yml</code>:
-    <div class="highlight"><pre><span></span><code><span class="nt">scrape_configs</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;prometheus&#39;</span>
-<span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">targets</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;localhost:9090&#39;</span><span class="p p-Indicator">]</span>
-</code></pre></div></li>
-<li><code>Deployment</code>: com imagem <code>prom/prometheus:latest</code></li>
-<li><code>Service</code>: expõe a porta <code>9090</code></li>
-</ul>
-<p><em>Print do Prometheus aqui</em><br />
-<img alt="prometheus-ui" src="./imgs/prometheus.png" /></p>
+<details class="example">
+<summary>Criando Kubernetes</summary>
+<p><strong>k8s</strong><br />
+Com o cluster criado, criamos os kubernets de cada microservicos e bottlenecks. 
+Aqui está um exemplo de k8s.yaml:</p>
+<div class="highlight"><pre><span></span><code>    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+    name: gateway
+    spec:
+    replicas: 1
+    selector:
+        matchLabels:
+        app: gateway
+    template:
+        metadata:
+        labels:
+            app: gateway
+        annotations:
+            prometheus.io/scrape: &quot;true&quot;
+            prometheus.io/port: &quot;8080&quot;
+            prometheus.io/path: &quot;/actuator/prometheus&quot;
+        spec:
+    containers:
+    - name: gateway
+      image: leosfreitas/gateway:latest
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 8080
+      resources:
+        requests:
+          memory: &quot;200Mi&quot;
+          cpu: &quot;50m&quot;
+        limits:
+          memory: &quot;300Mi&quot;
+          cpu: &quot;200m&quot;
+
+    apiVersion: v1
+    kind: Service
+    metadata:
+    name: gateway
+    labels:
+        app: gateway
+    spec:
+    type: LoadBalancer
+    ports:
+        - port: 80
+        protocol: TCP
+        targetPort: 8080
+    selector:
+        app: gateway
+</code></pre></div>
+</details>
+<details class="example">
+<summary>Kubernetes Criados</summary>
+<p><img alt="Kubernetes" src="../imgs/eks5.png" /></p>
+</details>
+<details class="example">
+<summary>Exemplo de requisição para a máquina.</summary>
+<p><img alt="Requisição" src="../imgs/eks6.png" /></p>
+</details>
 <hr />
-<h2 id="redis-cache-in-memory">⚡ Redis – Cache In-Memory</h2>
-<p>Utilizado principalmente no <code>product-service</code> para:
-- Caching da lista de produtos (<code>GET /product</code>)
-- Redução da latência (80ms → 5ms)
-- Desacoplamento da base de dados</p>
-<h3 id="kubernetes-redisk8sk8syaml">Kubernetes: <code>redis/k8s/k8s.yaml</code></h3>
-<ul>
-<li>Cria:</li>
-<li><code>Deployment</code>: com autenticação via <code>redis-secret</code></li>
-<li><code>Volumes</code>:<ul>
-<li><code>redis-config</code>: montado em <code>/etc/redis</code></li>
-<li><code>redis-data</code>: persistente via <code>redis-pvc</code></li>
-</ul>
-</li>
-<li><code>Readiness</code> e <code>Liveness</code> probes com <code>redis-cli ping</code></li>
-<li>Imagem: <code>redis:7-alpine</code></li>
-</ul>
-<p><em>Print mostrando Redis em execução aqui</em><br />
-<img alt="redis-status" src="./imgs/redis.png" /></p>
-<hr />
-<h2 id="metricas-observadas">🔍 Métricas observadas</h2>
+<h2 id="status-final">Status Final</h2>
 <table>
 <thead>
 <tr>
-<th>Serviço</th>
-<th>Métrica</th>
-<th>Descrição</th>
+<th>Recurso</th>
+<th>Status</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Todos</td>
-<td><code>http_server_requests_seconds_*</code></td>
-<td>Latência e contagem de requests</td>
+<td>IAM Role</td>
+<td>✅ Criado e associado</td>
 </tr>
 <tr>
-<td><code>product</code></td>
-<td><code>cache.gets</code>, <code>cache.puts</code></td>
-<td>Hits/misses de cache</td>
+<td>VPC/Subnets</td>
+<td>✅ Criado via CloudFormation</td>
 </tr>
 <tr>
-<td><code>order</code></td>
-<td><code>order_total_sum</code> (custom)</td>
-<td>Soma total de pedidos gerados</td>
+<td>Cluster EKS</td>
+<td>✅ Ativo e saudável</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="conclusao">Conclusão</h2>
-<ul>
-<li>A stack <strong>Prometheus + Grafana + Redis</strong> melhora tanto a <strong>observabilidade</strong> quanto a <strong>performance</strong>.</li>
-<li>Ajuda a antecipar problemas (ex: memória, CPU, falhas de endpoint).</li>
-<li>Reduz carga de banco de dados e melhora tempo de resposta.</li>
-</ul>
 <blockquote>
-<p>Recomenda-se manter esse setup ativo mesmo em produção local (Minikube ou Docker Desktop).</p>
-</blockquote>
-<hr />
-<blockquote>
-<p><em>Última revisão: 2025-06-03</em></p>
+<p><em>Última atualização: 2025-06-03</em></p>
 </blockquote>
 
 
